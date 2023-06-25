@@ -1,5 +1,5 @@
 def f(x):
-    return x**10.0-2
+    return x**2.0-2
 
 def newton(x0,eps=1e-7,error=1e-7,max_loop=100,cnt=0):
     while True:
@@ -13,6 +13,7 @@ def newton(x0,eps=1e-7,error=1e-7,max_loop=100,cnt=0):
         if abs(x1-x0)<=error or cnt>=max_loop:
             break
         x0=x1
+        print(x0)
     return x0
-
-print(newton(2.0))
+print(3.0)
+print(newton(3.0))
